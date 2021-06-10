@@ -630,14 +630,14 @@ button li{
  color: rgba(33, 33, 33, 1);
  
 }
-.clientsList{
+.clientsList {
   display: flex;
   justify-content: center;
   align-items: center;
   
  
 }
-.clientsList li:not(:last-child){
+.clientsList .clientLi:not(:last-child){
   margin-right:30px;
 }
 .clientsList:last-child{
@@ -651,11 +651,16 @@ button li{
   width: 106px;
   height: 60px;
 }
-.clientsList li{
+.clientLi{
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+}
+
+.clientLi:hover,
+ .clientLi:focus{
+  border-color: var(--web-color);
 }
 .clientIcon{
 
@@ -669,10 +674,7 @@ button li{
 .clientIcon:focus{
   fill:var(--web-color);
 }
-.clientList:hover,
-.clientList:focus{
-  border-color: var(--web-color);
-}
+
 .clientItem:last-child{
   margin-right: 0;
 }
