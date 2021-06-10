@@ -118,6 +118,11 @@ h2 h3 p {
 
 }
 .footer .logoText{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+
+
   display: block;
   color: var(--text-color);
   color:var(--active-color);
@@ -315,23 +320,28 @@ background-color: var(--order-bottom-active);
   
 
 }
-.mainServicesItem{
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.technoligies{
-  width: 70px;
-  height: 70px; 
+ .mainServicesItem{
   
+
+
+  justify-content: center;
  
 }
+
+.technologies{
+  position: absolute;
+  width: 270px;
+  height: 120px;
+
+  
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+.techIcons{
+  
+justify-content: center;
+}
+
 .serviceStyle ul{
   
   display: flex; 
@@ -422,20 +432,21 @@ background-color: var(--order-bottom-active);
 
 
 .iconsList{
+
  justify-content: space-around; 
  margin:0;
  padding:0;
  list-style: none;
+ margin-top: 16px;
 }
 
 .socialLink{ 
-  display: block;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  padding: 12px;
-  margin-top: 12px;
+ 
  
   
  
@@ -640,9 +651,7 @@ button li{
   align-items: center;
   width: 170px;
   height: 92px;
-
   border: 1px solid #AFB1B8;
-
   border-radius: 4px;
   
 }
@@ -650,11 +659,8 @@ button li{
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  
   justify-content: center;
-  padding: 16px 32px;
-
-  
+ 
 }
 
  
@@ -677,20 +683,21 @@ button li{
 background-color: var(--footer-background);
 padding: 60px 0;
 margin: 0 ;
-display: flex;
+
 }
-
-
-
-.footer ul{
-  
-  margin:0;
-  padding: 0;
+.footer .container{
   display: flex;
 }
 
+.footer ul{
+ 
+  margin:0;
+  padding: 0;
+ 
+}
+
 .footer li{
-  display:inline-block;
+ 
   font-family: 'Roboto';
   font-style: Regular;
   font-size: 14px;
@@ -700,11 +707,18 @@ display: flex;
   padding: 0;
    
 }
-.footer a{
+.footer .contact{
+  
   margin-top: 9px;
+  
 }
 
-
+.footerContacts{
+  margin-right: 70px;
+}
+.footerSocial{
+  display: inline-block;
+}
 
 .footer h3{
  display: inline-block;
@@ -720,25 +734,21 @@ display: flex;
 }
 
 .footer .socialLink{
-  align-items: center;
-  justify-content: center;
   
-  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50% 50%;
   background: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
-  display: flex;
+ 
   
 }
 .footer .socialLink:focus,
 .footer .socialLink:hover{
   background: var(--web-color);
 }
-.footerSocial{
+.footerIcons{
   display: flex;
-  
 }
 
 .footer .icon{
@@ -746,10 +756,7 @@ display: flex;
   height: 20px;
   fill: white;
 }
-.footer .footerSocial{
-  display: flex;
-  align-items: center;
-}
+
 /*parent color*/
 a {
   color: inherit;
