@@ -175,7 +175,7 @@ cursor: pointer;
 color: var(--web-color);
 cursor: pointer; 
 }
-
+ 
 
 .mailIcon{
   display: inline-block;
@@ -322,16 +322,15 @@ background-color: var(--order-bottom-active);
 }
  .mainServicesItem{
   
-
-
   justify-content: center;
  
 }
 
-.technologies{
-  position: absolute;
-  width: 270px;
-  height: 120px;
+.technologies .techIcons{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+margin-bottom: 3opx;;
 
   
   background: #F5F4FA;
@@ -439,19 +438,18 @@ justify-content: center;
  list-style: none;
  margin-top: 16px;
 }
-
+.iconsList li{
+  margin:0;
+}
 .socialLink{ 
  
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
  
- 
-  
- 
-  
-
 }
 /* outline: 1px dashed red;*/
 .socialLink a{
@@ -464,7 +462,7 @@ justify-content: center;
 }
 .icon:hover,
 .icon:focus{
-  fill: white;
+  fill: var(--active-color);
 }
 
 .socialLink:hover,
@@ -649,15 +647,18 @@ button li{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 16px 32px;
+  width: 106px;
+  height: 60px;
+}
+.clientsList li{
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  
 }
 .clientIcon{
-  width: 106px;
-  height: 60px;
+
   fill: #afb1b8;
   justify-content: center;
  
@@ -666,10 +667,10 @@ button li{
  
 .clientIcon:hover,
 .clientIcon:focus{
-  fill: var(--web-color);
+  fill:var(--web-color);
 }
-.clientItem:hover,
-.clientItem:focus{
+.clientList:hover,
+.clientList:focus{
   border-color: var(--web-color);
 }
 .clientItem:last-child{
