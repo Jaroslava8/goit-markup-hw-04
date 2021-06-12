@@ -142,7 +142,12 @@ padding: 0;
 line-height: 1.17;
 font-weight: 500;
 
+letter-spacing: 0.02em;
 }
+.navContacts a{
+  align-items: center;
+}
+
 .header .container {
   display: flex;
   
@@ -169,34 +174,39 @@ color: var(--web-color);
 cursor: pointer;
 
 }
+
 .mail:hover,
 .mail:focus,
 .mail:active{
 color: var(--web-color);
 cursor: pointer; 
-}
- 
 
+}
+.phone:hover,
+.phone:focus,
+.phone:active{
+  color: var(--web-color);
+  cursor: pointer;  
+ 
+}
+.mail{
+  align-items: center;
+}
+.mailBox{
+  display: flex;
+  letter-spacing: 0.02em;
+}
 .mailIcon{
   display: inline-block;
-  justify-content: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  fill:var(--main-text-color);
   margin-right: 10px;
   fill: currentColor;
-
- 
+  top: 1em;
 }
 
 
 .phoneIcon{
-  display: inline-block;
-  justify-content: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  fill:var(--main-text-color);
   margin-right: 10px;
+  fill: currentColor;
 }
 
 
@@ -330,7 +340,7 @@ background-color: var(--order-bottom-active);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-margin-bottom: 3opx;;
+  margin-bottom: 30px;;
 
   
   background: #F5F4FA;
