@@ -76,7 +76,9 @@ h2 h3 p {
 
  
 .header .navContacts a{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  
   
   margin-top:0;
   margin-bottom: 0;
@@ -85,14 +87,16 @@ h2 h3 p {
 
 }
 .header .navContacts{
+  display: flex;
+
   margin-left: auto ;
   color: var(--main-text-color);
-  align-items: baseline;
-  
+  align-items: center; 
 }
 .navContacts li{
   align-items: center;
 }
+
 .header .navContacts :not(:last-child){
   margin-right: 50px;
 }
@@ -150,7 +154,7 @@ letter-spacing: 0.02em;
 
 .navContacts ul{
   display: flex;
-  align-items: baseline;
+
 
 }
 .header .container {
@@ -194,10 +198,7 @@ cursor: pointer;
   cursor: pointer;  
  
 }
-
-
 .mailIcon{
- 
   margin-right: 10px;
   fill: currentColor;
 }
