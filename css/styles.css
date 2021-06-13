@@ -669,8 +669,11 @@ button li{
 }
 
 .clientLi:hover,
- .clientLi:focus{
-  border-color: var(--web-color);
+.clientLi:focus,
+.clientLi:hover svg,
+.clientLi:focus svg {
+fill:var(--web-color);
+border-color: var(--web-color);
 }
 .clientIcon{
 
